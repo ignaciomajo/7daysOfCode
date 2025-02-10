@@ -166,3 +166,28 @@ while (true) {
     break;
 }
 
+// ***** DÍA 4 *****
+
+
+let numeroSecreto = Math.ceil(Math.random() * 10);
+console.log(numeroSecreto);
+
+let intento = 0;
+
+while (intento < 3) {
+
+    let numeroUsuario = prompt('Ingrese un numero del 1 al 10: ').trim()
+    if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 10) {
+        alert('Por favor, ingrese un número valido');
+    } else if (numeroUsuario == numeroSecreto) {
+        alert('¡Excelente!, adivinaste el número secreto.');
+        break;
+    } else {
+        alert(`¡Ups!, no has acertado, intentalo nuevamente. Te quedan: ${2-intento} ${intento == 1 ? 'intento' : 'intentos'}.`)
+        intento++;
+    }
+}
+
+if (intento == 3) {
+    alert(`El juego ha terminado, el numero secreto era: ${numeroSecreto}`)
+}
