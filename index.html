@@ -9,12 +9,29 @@
 <body>
     <header></header>
     <main class="presentacion__listado">
-        <h1>Tu lista para las compras</h1>
-        <p>¡Aprovecha para que no se te olvide absolutamente nada!</p>
+        <h1 class="presentacion__listado__titulo">Tu lista para las compras</h1>
+        
         <div class="notepad">
-            <!-- Contenido del bloc de notas -->
+            <h2 class="presentacion__listado__subtitulo">¡Aprovecha para que no se te olvide absolutamente nada!</h2>
+            <div class="notepad__listas">
+
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="input__section">
+            <div class="input__section__wrapper">
+                <input type="text" id="categoria" class="input__section__box" placeholder="Ingrese la Categoria">
+                <button onclick="crearCategoria()" id="boton-categoria" class="input__section__button">Crear Categoría</button>
+            </div>
+            <div class="input__section__wrapper">
+                <input type="text" id="prod_categoria" class="input__section__box" placeholder="Ingrese la Categoria">
+                <input type="text" id="prod_producto" class="input__section__box" placeholder="Ingrese el Producto">
+                <input type="text" id="prod_cantidad" class="input__section__box" placeholder="Ingrese la Cantidad">
+                <button onclick="agregarProducto()" class="input__section__button">Agregar Producto</button>
+            </div>
+        </section>
+    </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>
