@@ -2,8 +2,7 @@
 
 :root {
     --color-letras: #000000;
-    /*--*/
-    --fuente-h2-size: 30px;
+    
     --fuente-categoria-size: 24px;
     --fuente-lista-size: 20px;
     --fuente: 'IBM Plex Mono', 'serif';
