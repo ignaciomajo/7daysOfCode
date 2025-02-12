@@ -3,7 +3,7 @@
 :root {
     --color-letras: #000000;
     /*--*/
-
+    --fuente-h2-size: 30px;
     --fuente-categoria-size: 24px;
     --fuente-lista-size: 20px;
     --fuente: 'IBM Plex Mono', 'serif';
@@ -77,7 +77,7 @@ body {
     flex-direction: center;
     align-items: start;
     font-family: var(--fuente);
-    font-size: 1rem;
+    font-size: 1.35rem;
     font-weight: 600;
     color: #000000;
     top: 2%;
