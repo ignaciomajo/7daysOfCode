@@ -6,7 +6,7 @@
 
     --fuente-categoria-size: 24px;
     --fuente-lista-size: 20px;
-    --fuente-titulo: 'IBM Plex Mono', 'serif';
+    --fuente: 'IBM Plex Mono', 'serif';
 }
 
 * {
@@ -35,20 +35,20 @@ body {
 }
 
 .presentacion__listado__titulo {
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente);
     font-size: 2.5rem;
     font-weight: 600;
     color: #F6F6F6;
-    background-color: #FFD95F;
+    background-color: #FC8F54;
     border: double;
-    border-color: #FF8383;
+    border-color: #FFD95F;
     border-radius: 16px;
     padding: 0.25rem 0.5rem;
     margin: 1rem;
 
 }
 
-.notepad__wrapper {
+.notepad__inputs {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
     display: flex;
     flex-direction: center;
     align-items: start;
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente);
     font-size: 1rem;
     font-weight: 600;
     color: #000000;
@@ -85,22 +85,24 @@ body {
 }
 
 
-.notepad__listado__titulo {
-    font-family: var(--fuente-titulo);
+.notepad__listado__listas h3{
+    font-family: var(--fuente);
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 4% 0%;
     text-decoration: underline;
 }
 
 .notepad__listado__listas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
     width: 100%;
     padding-top: 3rem;  
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente);
     font-size: 1.05rem;
+    gap: 10px;
+    
     
 }
 
@@ -114,6 +116,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .input__section__wrapper {
@@ -134,7 +137,7 @@ body {
     text-align: center;
     border: 2px solid;
     border-radius: 4px;
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente);
 }
 
 .input__section__button {
@@ -144,7 +147,19 @@ body {
     margin: 0.25rem;
     border: solid;
     border-radius: 8px;
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente);
     font-weight: 500;
     font-size: 16px;
+}
+
+.input__section__button:hover {
+    background-color: #B5828C;
+}
+
+.input__section__modificar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
 }
