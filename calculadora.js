@@ -4,7 +4,7 @@
 // Funciones
 
 function menuCalculadora() {
-    let menu = '*****     Menu Calculadora     *****\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir';
+    let menu = '\n*****     Menu Calculadora     *****\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir';
     return console.log(menu);
 }
 
